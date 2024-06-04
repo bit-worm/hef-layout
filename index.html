@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-HELB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/hef.jpg" type="image/x-icon">
+</head>
+<body>
+    <div id="container" style="min-height: 100vh;">
+        <div id="main" class="wrapper" style="min-height: 100vh;">
+            <div id="top">
+                <h2>New Funding Model</h2>
+                <h5>Financial Aid Calculator</h5>
+                <p id="intro">After a successful HELB application.<br> Get to know the breakdown of the fees you will pay, the HELB loan you will get and the free government scholarship you will be given.</p>
+                <div id="inputs">
+                    <div id="totalFees-container">
+                        <label for="totalFees" id="totalFees_">Total Fees</label>
+                        <input id="totalFees" placeholder="Fees for the whole year" name="totalFees" required>
+                    </div>
+                    <div id="scholarshipAmount-container">
+                        <label for="scholarshipAmount" id="scholarshipAmount_">Scholarship</label>
+                        <input id="scholarshipAmount" placeholder="Indicated on your portal" required>
+                    </div>
+                </div>
+                <p id="error"></p>
+                <div id="calculate-button"><button class="calculate">Calculate</button></div>
+            </div>
+            <h3>Category Information</h3>
+            <div id="category-container">
+                <div id="category-info">
+                    <table>
+                        <tr>
+                            <td>
+                                <p id="scholarship_"></p>
+                            </td>
+                            <td>
+                                <p id="scholarship"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p id="houseHold_"></p>
+                            </td>
+                            <td>
+                                <p id="houseHold"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p id="totalLoan_"></p>
+                            </td>
+                            <td>
+                                <p id="totalLoan"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p id="feesLoan_"></p>
+                            </td>
+                            <td>
+                                <p id="feesLoan"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p id="upkeep_"></p>
+                            </td>
+                            <td>
+                                <p id="upkeep"></p>
+                            </td>
+                        </tr>
+                    </table>    
+                    <p id="info"></p>
+                </div>
+                <div id="clear-button"><button class="clear">Clear</button></div>
+            </div>
+        </div>
+    
+        <footer>
+            <div id="foot">
+                <p id="note">Copyright © TaitanBit Solutions Ltd. | Developer: <a id="web" href="http://github.com/bit-worm" target="_parent">Boniface Sitati</a></p>
+            </div>
+            <div id="links">
+                <hr>
+                
+                    <a id="me" aria-label="Get to know me" href="http://github.com/bit-worm" target="_parent"><img id="me_icon" src="assets/circle-info-solid.svg" alt="Boniface Sitati"/></a>
+                    <a id="github" aria-label="Visit my github" href="https://github.com/bit-worm" target="_parent"><img id="github_icon" src="assets/github.svg" alt="github"/></a>
+                    <a id="twitter" aria-label="Visit my twitter" href="https://x.com/bit_worm_" target="_parent"><img id="twitter_icon" src="assets/x-twitter.svg" alt="twitter"></a>
+                    <a id="linkedIn" aria-label="Visit my linkedIn" href="https://www.linkedin.com/in/boniface-sitati-z11" target="_parent"><img id="linkedIn_icon" src="assets/linkedin.svg" alt="linkedIn"></a>
+                    <a id="donation" aria-label="Support me with a donation" href="#" target="_parent">Support</a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

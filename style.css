@@ -1,0 +1,334 @@
+body {
+    font-family: sans-serif;
+    background-color: #31385c;
+    margin: auto;
+    display: flex;
+}
+
+h2,
+h5{
+    color: #261c36;
+    text-align: center;
+    font-family: cursive;
+}
+h3{
+    text-align: center;
+    font-family: cursive;
+    background-color: #736dec65;
+    margin: auto;
+    margin-top: 10px;
+    max-width: 300px;
+    color: #130519;
+}
+#container{
+    max-width: 700px;
+    margin: auto;
+    padding: 0px;
+    border: 2px solid #654c75ae;
+    border-radius: 2px;
+    background-color: rgba(12, 12, 26, 0.76);
+    background-image: url(assets/cat_leaves.png);
+    background-size: cover;
+    border-bottom: 0px;
+    border-top: 0px;
+    min-height: 100%;
+}
+#top{
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 2px;
+    padding:20px;
+    border: 10px solid #654c75ae;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    background-color: #bbadc494;
+}
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 300px;
+}
+.calculate {
+    background-color: #8bd379;
+    color: rgb(33, 32, 32);
+    
+}
+.clear {
+    background-color: #db9494;
+    color: black;
+}
+.calculate:hover{
+    background-color: #4CAF50;
+}
+.clear:hover{
+    background-color: red;
+}
+#category-info{
+    margin: 30px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 5px solid #b3a7a7;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    max-width: 100%;
+    background-color: #b3a7a7;
+    min-height: 140px;
+}
+#foot{
+    text-align: center;
+}
+#note{
+    color: #7a80a9fe;
+}
+#links{
+    text-align: center;
+    margin: auto;
+}
+#calculate-button,
+#clear-button{
+    text-align: center;
+}
+#donation,
+#me,
+#web,
+#github,
+#twitter,
+#linkedIn{
+    color: #0b72c5;
+    margin: 10px;
+}
+#donation:hover,
+#me:hover,
+#web:hover,
+#github:hover,
+#twitter:hover,
+#linkedIn:hover{
+    color: #6cf710;
+}
+table{
+    border: 0px solid #0b72c5;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+#scholarship,
+#houseHold,
+#totalLoan,
+#feesLoan,
+#upkeep{
+    border: 0px solid #6cf710;
+    margin-left: 200px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 472px) {
+    #scholarship,
+    #houseHold,
+    #totalLoan,
+    #feesLoan,
+    #upkeep{
+        border: 0px solid #6cf710;
+        margin-left: 100px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 380px) {
+    #scholarship,
+    #houseHold,
+    #totalLoan,
+    #feesLoan,
+    #upkeep{
+        border: 0px solid #6cf710;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 294px) {
+    #scholarship,
+    #houseHold,
+    #totalLoan,
+    #feesLoan,
+    #upkeep{
+        border: 0px solid #6cf710;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+}
+#scholarship_,
+#houseHold_,
+#totalLoan_,
+#feesLoan_,
+#upkeep_{
+    border: 0px solid #6cf710;
+}
+#error{
+    text-align: center;
+    color: #d4db46;
+}
+#intro{
+    text-align: center;
+    background-color: #8f999638;
+    font-size: clamp(10px, 1px + 6vw, 20px);
+    font-family: 'Times New Roman', Times, serif;
+    color: #01223c;
+}
+#me_icon,
+#twitter_icon,
+#linkedIn_icon,
+#github_icon{
+    margin: auto;
+    max-width: 2em;
+    max-height: 2em;
+}
+#scholarshipAmount,
+#totalFees{
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    border: 1px solid #c7bcbc;
+    border-radius: 5px;
+    min-width: 100px;
+    background-color: #dee3e5;
+}
+#inputs{
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border: 0px solid #6cf710;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+}
+@media (max-width: 280px){
+    #container{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: auto;
+        margin-right: 0px;
+    }
+    #scholarship,
+    #houseHold,
+    #totalLoan,
+    #feesLoan,
+    #upkeep{
+    border: 0px solid #6cf710;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: small;
+    }
+    #scholarship_,
+    #houseHold_,
+    #totalLoan_,
+    #feesLoan_,
+    #upkeep_{
+        border: 0px solid #6cf710;
+        font-size: small;
+    }
+    
+}
+
+#scholarshipAmount_,
+#totalFees_{
+    margin: auto;
+    margin-left: 10px;
+}
+
+footer{
+    max-height: 100%;
+    max-width: 700px;
+    margin: auto;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+/*
+@media (min-width: 618px){
+    footer{
+        max-height: 100%;
+        max-width: 700px;
+        margin: auto;
+        padding: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin-top: 0px;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .wrapper {
+        position: relative;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    
+}
+*/
+/*
+#category-container{
+    border: 0px solid #000000;
+    margin: auto;
+    padding: 5px;
+    margin-top: 10px;
+}
+@media (max-width: 617px) {
+    #category-container{
+        border: 0px solid #000000;
+        margin: auto;
+        padding: 5px;
+        margin-top: 10px;
+        min-height: 480px;
+    }
+    
+}
+*/
+#donation{
+    font-weight: bold;
+    font-size: large;
+}
+#scholarshipAmount-container,
+#totalFees-container{
+    margin: auto;
+    padding: 3px;
+    border: 0px solid #000000;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #53458762;
+}
+@media (max-width: 482px) {
+    #inputs{
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+        border: 0px solid #6cf710;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #scholarshipAmount-container{
+    margin: auto;
+    border: 0px solid #000000;
+    max-width: 200px;
+    margin-top: 5px;
+}
+    
+}
