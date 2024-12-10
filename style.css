@@ -30,7 +30,7 @@ h3{
     background-size: cover;
     border-bottom: 0px;
     border-top: 0px;
-    background-image: url(assets/cat_leaves.png);
+    /*background-image: url(assets/cat_leaves.png);*/
     min-height: 100%;
 }
 #top{
